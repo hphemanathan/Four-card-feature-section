@@ -90,11 +90,13 @@ h4 {
 
   /* Margins */
   --mar-t-2: 2rem;
+  --mar-t-5: 5rem;
   --mar-b-75: 0.75rem;
   --mar-b-1: 1rem;
   --mar-b-1_25: 1.25rem;
   --mar-b-1_5: 1.5rem;
   --mar-b-2: 2rem;
+  --mar-b-5: 5rem;
   --mar-rl-1_5: 0 1.5rem;
   --mar-rl-2: 0 2rem;
   --mar-r-3-l-2_5: 0 3rem 0 2.5rem;
@@ -116,8 +118,8 @@ body {
 }
 
 .container {
-  width: min(90%);
-  margin-top: auto;
+  width: min(80%);
+  margin-top: var(--mar-t-5);
 }
 
 .heading-primary {
@@ -131,6 +133,11 @@ body {
   font-weight: 600;
   text-align: center;
   margin-bottom: var(--mar-b-1);
+}
+
+.about-text {
+  text-align: center;
+  margin-bottom: var(--mar-b-5);
 }
 
 .footer {
