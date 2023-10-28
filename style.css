@@ -94,6 +94,7 @@ h4 {
   --pad-tb-1: 1rem 0;
   --pad-rl-1_75: 0 1.75rem;
   --pad-b-1_75: 1.75rem;
+  --pad-b-2: 2rem;
 
   /* Margins */
   --mar-t-1_5: 1.5rem;
@@ -106,6 +107,8 @@ h4 {
   --mar-b-1_5: 1.5rem;
   --mar-b-1_75: 1.75rem;
   --mar-b-2: 2rem;
+  --mar-b-2_5: 2.5rem;
+  --mar-b-4: 4rem;
   --mar-b-5: 5rem;
   --mar-rl-1_5: 0 1.5rem;
   --mar-rl-1_75: 0 1.75rem;
@@ -174,6 +177,13 @@ body {
   text-align: center;
   font-size: 0.9375rem;
   margin-bottom: var(--mar-b-5);
+
+  @media (min-width: 68.75em) {
+    text-align: center;
+    width: min(34rem);
+    margin: auto;
+    margin-bottom: var(--mar-b-4);
+  }
 }
 
 .feature-card {
@@ -191,18 +201,30 @@ body {
   font-weight: 600;
   margin-top: var(--mar-t-1_5);
   padding: var(--pad-rl-1_75);
+
+  @media (min-width: 68.75em) {
+    margin-bottom: var(--mar-b-0_5);
+  }
 }
 
 .feature-card_text {
   font-size: 0.8125rem;
   margin-bottom: var(--mar-b-2);
   padding: var(--pad-rl-1_75);
+
+  @media (min-width: 68.75em) {
+    margin-bottom: var(--mar-b-2_5);
+  }
 }
 
 .feature-card_icon {
   margin-left: auto;
   margin-right: 1.75rem;
   padding-bottom: 1.75rem;
+
+  @media (min-width: 68.75em) {
+    padding-bottom: var(--pad-b-2);
+  }
 }
 
 .supervisor-card {
@@ -220,6 +242,17 @@ body {
 .calculator-card {
   border-top: 3px solid var(--calculator-color);
 }
+
 .footer {
   margin-top: auto;
+}
+
+.footer > a {
+  color: black;
+}
+
+.footer > a:hover,
+.footer > a:active {
+  color: black;
+  cursor: pointer;
 }
