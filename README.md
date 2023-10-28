@@ -19,7 +19,7 @@ Four card feature section using HTML5, CSS3 with Flexbox
 
 ### Screenshot
 
-file:///home/hemanathan/Desktop/Responsively-Screenshots/MacBook%20Pro-1698499976057.jpeg
+![MacBook Pro-1698502496738](https://github.com/hphemanathan/Four-card-feature-section/assets/18226707/c5bcbd18-1105-474b-8576-92f5c23ceca1)
 
 
 ### Links
