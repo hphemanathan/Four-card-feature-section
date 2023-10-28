@@ -94,17 +94,21 @@ h4 {
   --pad-tb-1: 1rem 0;
   --pad-rl-1_75: 0 1.75rem;
   --pad-b-1_75: 1.75rem;
+  --pad-b-2: 2rem;
 
   /* Margins */
   --mar-t-1_5: 1.5rem;
   --mar-t-2: 2rem;
   --mar-t-5: 5rem;
+  --mar-b-0_5: 0.5rem;
   --mar-b-75: 0.75rem;
   --mar-b-1: 1rem;
   --mar-b-1_25: 1.25rem;
   --mar-b-1_5: 1.5rem;
   --mar-b-1_75: 1.75rem;
   --mar-b-2: 2rem;
+  --mar-b-2_5: 2.5rem;
+  --mar-b-4: 4rem;
   --mar-b-5: 5rem;
   --mar-rl-1_5: 0 1.5rem;
   --mar-rl-1_75: 0 1.75rem;
@@ -114,6 +118,7 @@ h4 {
 
 /* ----------------------------------------- */
 /* General Styles */
+
 /* ----------------------------------------- */
 
 body {
@@ -128,14 +133,33 @@ body {
 }
 
 .container {
-  width: min(80%);
+  width: min(80%, 29rem);
   margin-top: var(--mar-t-5);
+
+  @media (min-width: 68.75em) {
+    width: min(90rem);
+    /* max-width: 90rem; */
+  }
+}
+
+.flex-wrapper {
+  @media (min-width: 68.75em) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
 }
 
 .heading-primary {
   font-size: 1.5rem;
   font-weight: 200;
   text-align: center;
+
+  @media (min-width: 68.75em) {
+    font-size: 2.25rem;
+    margin-bottom: var(--mar-b-0_5);
+  }
 }
 
 .heading-secondary {
@@ -143,18 +167,33 @@ body {
   font-weight: 600;
   text-align: center;
   margin-bottom: var(--mar-b-1);
+
+  @media (min-width: 68.75em) {
+    font-size: 2.25rem;
+  }
 }
 
 .about-text {
   text-align: center;
   font-size: 0.9375rem;
   margin-bottom: var(--mar-b-5);
+
+  @media (min-width: 68.75em) {
+    text-align: center;
+    width: min(34rem);
+    margin: auto;
+    margin-bottom: var(--mar-b-4);
+  }
 }
 
 .feature-card {
   box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.5);
   border-radius: 0.5rem;
   margin-bottom: var(--mar-b-1_5);
+
+  @media (min-width: 68.75em) {
+    width: 22rem;
+  }
 }
 
 .feature-card_heading {
@@ -162,18 +201,30 @@ body {
   font-weight: 600;
   margin-top: var(--mar-t-1_5);
   padding: var(--pad-rl-1_75);
+
+  @media (min-width: 68.75em) {
+    margin-bottom: var(--mar-b-0_5);
+  }
 }
 
 .feature-card_text {
   font-size: 0.8125rem;
   margin-bottom: var(--mar-b-2);
   padding: var(--pad-rl-1_75);
+
+  @media (min-width: 68.75em) {
+    margin-bottom: var(--mar-b-2_5);
+  }
 }
 
 .feature-card_icon {
   margin-left: auto;
   margin-right: 1.75rem;
   padding-bottom: 1.75rem;
+
+  @media (min-width: 68.75em) {
+    padding-bottom: var(--pad-b-2);
+  }
 }
 
 .supervisor-card {
@@ -191,6 +242,17 @@ body {
 .calculator-card {
   border-top: 3px solid var(--calculator-color);
 }
+
 .footer {
   margin-top: auto;
+}
+
+.footer > a {
+  color: black;
+}
+
+.footer > a:hover,
+.footer > a:active {
+  color: black;
+  cursor: pointer;
 }
